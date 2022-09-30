@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+*,::after,::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition:all .2s linear;
+}
+html{
+    overflow-x: hidden;
+}
+.btn{
+    color:var(--logo-color);
+    border:0.1rem solid var(--logo-color);
+    padding:0.6rem 2rem;
+    display:inline-block;
+}
+.btn:hover{
+    color:var(--text-white);
+    background:var(--logo-color);
+}
+body{
+    --body-bg-color:#1d1d1d;
+    --text-white:#fff;
+    --logo-color:#CC6C06;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--body-bg-color);
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:auto;
+    background-color: var(--body-bg-color);
+    border-bottom:1px solid #3b3a3a;
+    position:fixed;
+    top:0;left:0;right:0;
+    padding:1.3rem 7%;
+    z-index:999;
+}
+header .logo a{
+    color:var(--logo-color);
+    font-size:2rem;
+}
+header .logo span{
+    color:var(--text-white);
+}
+header .navbar{
+    padding-left:8rem;
+}
+
+header .navbar a{
+    color:#adabab;
+    font-weight:300;
+    margin:0 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+header .navbar a:hover{
+    color:#CC6C06;
+}
+
+header .toggle-icon .fas{
+    font-size:2rem;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s linear;
+}
+.toggle-icon .fas:hover{
+    transform:scale(0.8) rotate(-45deg);
+}
+.toggle-icon .times,.bars{
+    display:none;
+}
+header .social-icons{
+    display:none;
+}
+.section-1{
+    padding-top:6rem;
+    min-height: 100vh;
+    display:flex;
+    position:relative;
+}
+.section-1 .container{
+    margin-left:7rem;
+}
+.section-1 .container .about-desc{
+    font-family: 'Opens sans', sans-serif;
+    margin-top:3rem;
+}
+.section-1 .container .about-desc h2{
+    color:var(--text-white);
+    font-size:4rem;
+    letter-spacing: 3px;
+}
+.section-1 .container .about-desc p{
+    color:var(--text-white);
+    font-size:4rem;
+}
+.section-1 .container .about-desc #name{
+    color:var(--logo-color);
+    font-size:6rem;
+}
+.section-1 .container .about-desc .info{
+    color:var(--logo-color);
+    margin:30px 0; 
+    font-family: "La Belle Aurore", cursive;
+    font-size: 5rem;
+}
+.section-1 span{
+    position:absolute;
+    bottom:-30px;
+    background: transparent;
+    border-radius:50%;
+
+    pointer-events: none;
+    box-shadow:inset 0 0 10px rgba(255,255,255,0.5);
+    animation:animate 9s linear infinite;
+    /* transform:translate3d(-80%); */
+}
+@keyframes animate{
+    0%{
+        transform:translateY(0%);
+        opacity:1;
+    }
+    99%{
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-1200%);
+        opacity:0;
+    }
+}
+.section-1::after{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:5px;
+    background:#3a3939;
+    left:0;
+    bottom:0;
+}
+.switch{
+    position:absolute;
+    margin-top:70px;
+    max-width:1375px;
+}
+.switch-btn{
+    width:40px;
+    height:30px;
+    outline:none;
+    border:none;
+    border-radius:0 50px 50px 0;
+    background:#CC6C06;
+    color:#fff;
+    transition:width .3s linear;
+    --webit-transition:width .3s linear;
+}
+.switch-btn span{
+    font-size:20px;
+    display: inline-block;
+    cursor:pointer;
+}
+.switch-btn:hover{
+    width:60px;
+}
+.switch::after{
+    position:absolute;
+    top:50px;
+    left:30px;
+    color:#CC6C06;
+    font-family: 'La Belle Aurore',cursive;
+    font-size:14px;
+}
+.switch-btn .pause{
+    display:none;
+}
+.skills{
+    width:85%;
+    margin:70px auto 0;
+    min-height:90vh;
+    position: relative;
+}
+.skills .head{
+    font-size:12rem;
+    color:#3a3939;
+}
+.skills .desc{
+    width:400px;
+    margin:auto;
+    font-size:2.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    text-align:center;
+    position:relative;
+    top:-125px;
+    left:-55px;
+    color:#CC6C06;
+}
+
+/* section1 */
+.about{
+    width:85%;
+    margin:70px auto 0;
+    min-height: 80vh;
+}
+.about-wrapper .head{
+    font-size:12rem;
+    color:#3a3939;
+}
+.my-self{
+    width:400px;
+    margin:auto;
+    font-size:2.5rem;
+    font-weight:bold;
+    letter-spacing:3px;
+    display:block;
+    text-align:center;
+    position:relative;
+    top:-125px;
+    left:-55px;
+    color:#CC6C06;
+}
+.my-self::before{
+    content:'';
+    width:350px;
+    height: 2px;
+    background: #CC6C06;
+    position:absolute;
+    bottom:0;
+    left:-450px;
+    display:block;
+}
+.my-self::after{
+    content:'';
+    width:50px;
+    height:50px;
+    position:absolute;
+    left:-445px;
+    bottom:0;
+    border-radius:50%;
+    background:rgb(204,108,6);
+    display:block;
+}
+
+
+.my-self.animate::after{
+    animation:ball 5s ease-in-out infinite alternate;
+    --webkit-animation:ball 5s ease-in-out infinite alternate;
+    -o-animation:ball 5s ease-in-out infinite alternate;
+}
+@keyframes ball{
+    0%{
+        transform:translateX(0);
+    }
+    28%{
+        z-index:-999;
+    }
+    100%{
+        transform:translateX(325px);
+    }
+}
+
+.my-story{
+    width:100%;
+    font-size:1.2rem;
+    color:#adabab;
+    font-weight:300;
+    font-family:'Roboto',sans-serif;
+    line-height:1.8rem;
+}
+.my-story .para-1{
+    position:relative;
+    margin-bottom:35px;
+}
+.my-story .para-2{
+    margin-top:2rem;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.infos{
+    width:100%;
+    font-size:1.2rem;
+    color:#adabab;
+    font-weight:300;
+    font-family:'Roboto',sans-serif;
+    line-height:1.8rem;
+}
+.infos  .h{
+    font-size:4rem;
+    font-weight: bold;
+    display:inline-block;
+    margin-bottom:3rem;
+}
+.infos .para-1{
+    margin-bottom:3rem;
+}
+.contain{
+    height: 60vh;
+    width:30vw;
+    position: absolute;
+    left:70rem;
+    top:28rem;
+    transform:translate(-50%,-50%);
+    perspective: 1000px;
+}
+.box{
+    height:250px;
+    width:250px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation:animate1 5s infinite;
+}
+@keyframes animate1{
+    0%{
+        transform:rotateX(45deg) rotateY(-45deg);
+    }
+    25%{
+        transform:rotateX(-45deg) rotateY(-45deg);
+    }
+    50%{
+        transform:rotateX(45deg) rotateY(-45deg);
+    }
+    75%{
+        transform:rotateX(-45deg) rotateY(45deg);
+    }
+    100%{
+        transform:rotateX(45deg) rotateY(-45deg);
+    }
+}
+.card{
+    height:250px;
+    width:250px;
+    text-align: center;
+    padding:100px 0px;
+    color:var(--logo-color);
+    background: var(--body-bg-color);
+    font-size:32px;
+    border:2px solid var(--logo-color);
+    position:absolute;
+    box-shadow: 0 .5rem 1rem rgb(204,108,6);
+}
+#front{
+    transform:translateZ(125px);
+}
+#back{
+    transform:translateZ(-125px);
+}
+#left{
+    right:7.8rem;
+    transform:rotateY(-90deg);
+}
+#right{
+    left:7.8rem;
+    transform:rotateY(90deg);
+}
+#top{
+    bottom:7.8rem;
+    transform:rotateX(90deg);
+}
+#bottom{
+    top:7.8rem;
+    transform:rotateX(-90deg);
+}
+
+
