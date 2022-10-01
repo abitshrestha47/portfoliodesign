@@ -367,4 +367,66 @@ header .social-icons{
     transform:rotateX(-90deg);
 }
 
+.contact{
+    width:85%;
+    margin:70px auto 0;
+    min-height: 80vh;
+}
+.contact .contain-wrapper .left .below{
+    font-size:2.5rem;
+    color:#CC6C06;
+    font-weight: bold;
+}
+/* .contact .contain-wrapper .left h1{
+    font-size:12rem;
+    color:#3a3939;
+} */
+.contact .aboutcontact{
+    padding:1rem 2rem;
+    margin-top:1rem;
+    height:23rem;
+    font-size:1rem;
+    width:25rem;
+    color:var(--text-white);
+    line-height: 1.5;
+    flex-basis: 175rem;
+}
+.contact .aboutcontact .title{
+    color:gray;
+    font-size:2rem;
+    margin:0.5rem 0;
+} 
+.contact .wrap{
+    display:flex;
+    gap:20rem;
+    position:relative;
+    left: 0rem;
+    top: -15rem;
+}
+.contact .wrap .contactme{
+    margin-top:10rem;
+    flex-basis:200rem;
+}
+.contact .wrap .contactme input{
+    background: rgb(58, 57, 57);
+    padding:.7rem 2.9rem;
+    border:none;
+    margin:0.5rem 0;
+}
+.contact .wrap .contactme .subject{
+    padding:.7rem 11.2rem;
+    margin:0.5rem 0;
+    background: rgb(58, 57, 57);
+}
+textarea{
+    background: rgb(58, 57, 57);
+}
+.contact .head{
+    font-size:12rem;
+    color:#3a3939;
+}
+
+
+
+
 
