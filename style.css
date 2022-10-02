@@ -372,10 +372,11 @@ header .social-icons{
     margin:70px auto 0;
     min-height: 80vh;
 }
-.contact .contain-wrapper .left .below{
+.contact  .below{
     font-size:2.5rem;
     color:#CC6C06;
     font-weight: bold;
+    margin-bottom:2rem;
 }
 /* .contact .contain-wrapper .left h1{
     font-size:12rem;
@@ -401,30 +402,40 @@ header .social-icons{
     gap:20rem;
     position:relative;
     left: 0rem;
-    top: -15rem;
+    top: -5rem;
 }
 .contact .wrap .contactme{
     margin-top:10rem;
-    flex-basis:200rem;
+    position:relative;
+    top:-13rem;
+    left:-10rem;
+    flex-basis:100rem;
 }
 .contact .wrap .contactme input{
     background: rgb(58, 57, 57);
-    padding:.7rem 2.9rem;
+    padding:1rem 2.9rem;
     border:none;
     margin:0.5rem 0;
 }
 .contact .wrap .contactme .subject{
-    padding:.7rem 11.2rem;
+    padding:1rem 11rem;
     margin:0.5rem 0;
     background: rgb(58, 57, 57);
 }
 textarea{
     background: rgb(58, 57, 57);
+    resize:none;
 }
 .contact .head{
     font-size:12rem;
     color:#3a3939;
 }
+.c{
+    display:flex;
+    justify-content: center;
+    margin-top:1rem;
+}
+
 
 
 
