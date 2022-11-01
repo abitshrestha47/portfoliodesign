@@ -25,7 +25,7 @@ html{
 body{
     --body-bg-color:#1d1d1d;
     --text-white:#fff;
-    --logo-color:#CC6C06;
+    --logo-color:#018141;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--body-bg-color);
 }
@@ -59,7 +59,7 @@ header .navbar a{
     font-family: 'Roboto', sans-serif;
 }
 header .navbar a:hover{
-    color:#CC6C06;
+    color:#018141;
 }
 
 header .toggle-icon .fas{
@@ -153,7 +153,7 @@ header .social-icons{
     outline:none;
     border:none;
     border-radius:0 50px 50px 0;
-    background:#CC6C06;
+    background:#018141;
     color:#fff;
     transition:width .3s linear;
     --webit-transition:width .3s linear;
@@ -170,7 +170,7 @@ header .social-icons{
     position:absolute;
     top:50px;
     left:30px;
-    color:#CC6C06;
+    color:#018141;
     font-family: 'La Belle Aurore',cursive;
     font-size:14px;
 }
@@ -198,7 +198,7 @@ header .social-icons{
     position:relative;
     top:-125px;
     left:-55px;
-    color:#CC6C06;
+    color:#018141;
 }
 
 /* section1 */
@@ -222,13 +222,13 @@ header .social-icons{
     position:relative;
     top:-125px;
     left:-55px;
-    color:#CC6C06;
+    color:#018141;
 }
 .my-self::before{
     content:'';
     width:350px;
     height: 2px;
-    background: #CC6C06;
+    background: #018141;
     position:absolute;
     bottom:0;
     left:-450px;
@@ -242,7 +242,7 @@ header .social-icons{
     left:-445px;
     bottom:0;
     border-radius:50%;
-    background:rgb(204,108,6);
+    background:#018141;
     display:block;
 }
 
@@ -342,7 +342,7 @@ header .social-icons{
     font-size:32px;
     border:2px solid var(--logo-color);
     position:absolute;
-    box-shadow: 0 .5rem 1rem rgb(204,108,6);
+    box-shadow: 0 .5rem 1rem #018141;
 }
 #front{
     transform:translateZ(125px);
@@ -374,7 +374,7 @@ header .social-icons{
 }
 .contact  .below{
     font-size:2.5rem;
-    color:#CC6C06;
+    color:#018141;
     font-weight: bold;
     margin-bottom:2rem;
 }
